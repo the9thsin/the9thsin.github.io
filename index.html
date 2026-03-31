@@ -3,12 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirecting...</title>
-    <meta http-equiv="refresh" content="0; url=chapters.html">
-    <link rel="canonical" href="chapters.html" />
+    <title>Chapters</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .chapter { margin: 5px 0; }
+    </style>
 </head>
 <body>
-    <h1>Redirection in progress...</h1>
-    <p>If you are not redirected automatically, follow this <a href="chapters.html">link to the chapters page</a>.</p>
+    <h1>Chapters</h1>
+    <button id="toggleSort">Toggle Sort Order</button>
+    <div id="chapterList"></div>
+
+    <script>
+        const chapters = [];
+        const chapterList = document.getElementById('chapterList');
+        const toggleSortButton = document.getElementById('toggleSort');
+        let ascending = false;
+
+        // Populate chapters (mock data example)
+        for (let i = 1; i <= 10; i++) {
+            chapters.push(`chapter-${i}`);
+        }
+
+        // Function to display chapters
+        function displayChapters() {
+            chapterList.innerHTML = '';
+            // Sort chapters
+            const sortedChapters = chapters.sort((a, b) => ascending ? a.localeCompare(b) : b.localeCompare(a));
+            sortedChapters.forEach(chapter => {
+                const link = document.createElement('a');
+                link.href = `/chapters/${chapter}`;
+                link.textContent = chapter.replace('-', ' ') + '\n';
+                link.className = 'chapter';
+                chapterList.appendChild(link);
+            });
+        }
+
+        // Toggle sort order
+        toggleSortButton.addEventListener('click', () => {
+            ascending = !ascending;
+            displayChapters();
+        });
+
+        // Initial display
+        displayChapters();
+    </script>
 </body>
 </html>
