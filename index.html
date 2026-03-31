@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The 9th Sin</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=IM+Fell+English:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg:          #1e1e20;
+      --surface:     #272729;
+      --surface2:    #303034;
+      --accent:      #3a7d5a;
+      --accent-dim:  #2a5c40;
+      --accent-glow: rgba(58, 125, 90, 0.12);
+      --text:        #e8e8e8;
+      --text-muted:  #6a6a70;
+      --border:      rgba(58, 125, 90, 0.18);
+      --divider:     rgba(255,255,255,0.07);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      min-height: 100vh;
+      line-height: 1.65;
+    }
+
+    header {
+      text-align: center;
+      padding: 4rem 2rem 3rem;
+    }
+
+    .novel-title {
+      font-family: 'IM Fell English', serif;
+      font-size: clamp(2rem, 6vw, 3.2rem);
+      font-weight: 400;
+      letter-spacing: 0.03em;
+      color: var(--text);
+      line-height: 1.1;
+    }
+
+    .header-rule {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      max-width: 340px;
+      margin: 1.6rem auto 1rem;
+    }
+
+    .header-rule span {
+      display: none;
+    }
+
+    .header-ornament {
+      color: var(--accent);
+      font-size: 1rem;
+      line-height: 1;
+      font-family: 'Cormorant Garamond', serif;
+    }
+
+    .subtitle {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.68rem;
+      letter-spacing: 0.22em;
+      color: var(--text-muted);
+      text-transform: uppercase;
+    }
+
+    .controls {
+      display: flex;
+      gap: 0.75rem;
+      align-items: center;
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 2rem 2rem 0;
+    }
+
+    .search-wrap {
+      flex: 1;
+      position: relative;
+    }
+
+    .search-wrap svg {
+      position: absolute;
+      left: 0.9rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      pointer-events: none;
+      width: 14px;
+      height: 14px;
+    }
+
+    #search {
+      width: 100%;
+      padding: 0.65rem 1rem 0.65rem 2.4rem;
+      background: var(--surface);
+      border: 1px solid var(--divider);
+      border-radius: 4px;
+      color: var(--text);
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1rem;
+      outline: none;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    #search:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px var(--accent-glow);
+    }
+
+    #search::placeholder {
+      color: var(--text-muted);
+      font-style: italic;
+    }
+
+    .sort-btn {
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.65rem 1.1rem;
+      background: var(--surface);
+      border: 1px solid var(--divider);
+      border-radius: 4px;
+      color: var(--text-muted);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      cursor: pointer;
+      white-space: nowrap;
+      letter-spacing: 0.05em;
+      transition: color 0.18s, border-color 0.18s, background 0.18s;
+    }
+
+    .sort-btn:hover {
+      color: var(--accent);
+      border-color: var(--border);
+    }
+
+    .sort-icon {
+      font-size: 0.9rem;
+      line-height: 1;
+      color: var(--accent);
+      transition: transform 0.3s;
+    }
+
+    .sort-btn.asc .sort-icon { transform: rotate(180deg); }
+
+    .chapter-meta {
+      max-width: 760px;
+      margin: 1rem auto 0;
+      padding: 0 2rem;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.68rem;
+      color: var(--text-muted);
+      letter-spacing: 0.08em;
+    }
+
+    .chapter-list {
+      max-width: 760px;
+      margin: 1.2rem auto 0;
+      padding: 0 2rem 6rem;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .chapter-item {
+      display: flex;
+      align-items: baseline;
+      gap: 1.2rem;
+      padding: 0.85rem 0;
+      border-bottom: 1px solid var(--divider);
+      cursor: pointer;
+      color: var(--text);
+      transition: color 0.15s;
+      animation: fadeIn 0.3s both;
+    }
+
+    .chapter-item:first-child { border-top: 1px solid var(--divider); }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(5px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .chapter-item:hover { color: var(--accent); }
+
+    .chapter-num {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.68rem;
+      color: var(--text-muted);
+      min-width: 4rem;
+      letter-spacing: 0.06em;
+      flex-shrink: 0;
+      padding-top: 0.15rem;
+    }
+
+    .chapter-item:hover .chapter-num { color: var(--accent-dim); }
+
+    .chapter-name {
+      flex: 1;
+      font-size: 1.2rem;
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+    }
+
+    .chapter-arrow {
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      opacity: 0;
+      transform: translateX(-4px);
+      transition: opacity 0.15s, transform 0.15s;
+      flex-shrink: 0;
+    }
+
+    .chapter-item:hover .chapter-arrow {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .state-msg {
+      text-align: center;
+      padding: 4rem 1rem;
+      color: var(--text-muted);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.8rem;
+      line-height: 2;
+    }
+
+    .loading-dots::after {
+      content: '';
+      animation: dots 1.4s steps(4, end) infinite;
+    }
+
+    @keyframes dots {
+      0%   { content: ''; }
+      25%  { content: '.'; }
+      50%  { content: '..'; }
+      75%  { content: '...'; }
+    }
+
+    #reader { display: none; }
+
+    .reader-topbar {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1.5rem 2rem;
+      border-bottom: 1px solid var(--divider);
+    }
+
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      background: none;
+      border: 1px solid var(--divider);
+      border-radius: 4px;
+      color: var(--text-muted);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.06em;
+      padding: 0.45rem 0.85rem;
+      cursor: pointer;
+      white-space: nowrap;
+      flex-shrink: 0;
+      transition: color 0.15s, border-color 0.15s;
+    }
+
+    .back-btn:hover {
+      color: var(--accent);
+      border-color: var(--border);
+    }
+
+    .reader-title-bar {
+      font-family: 'IM Fell English', serif;
+      font-size: 1.15rem;
+      color: var(--text-muted);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .reader-content {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 3.5rem 2rem;
+    }
+
+    .reader-body {
+      font-size: 1.2rem;
+      line-height: 2;
+    }
+
+    .reader-body h1,
+    .reader-body h2,
+    .reader-body h3 {
+      font-family: 'IM Fell English', serif;
+      color: var(--text);
+      margin: 2.5rem 0 1rem;
+      font-weight: 400;
+      line-height: 1.2;
+    }
+
+    .reader-body h1 { font-size: 1.9rem; }
+    .reader-body h2 { font-size: 1.5rem; color: var(--accent); }
+    .reader-body h3 { font-size: 1.25rem; }
+
+    .reader-body p { margin-bottom: 1.25rem; }
+
+    .reader-body a { color: var(--accent); text-decoration: underline; }
+
+    .reader-body blockquote {
+      border-left: 2px solid var(--accent-dim);
+      padding: 0.25rem 0 0.25rem 1.4rem;
+      margin: 1.5rem 0;
+      color: var(--text-muted);
+      font-style: italic;
+    }
+
+    .reader-body code {
+      background: var(--surface);
+      padding: 0.1rem 0.4rem;
+      border-radius: 3px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.85em;
+      color: var(--accent);
+    }
+
+    .reader-body pre {
+      background: var(--surface);
+      border: 1px solid var(--divider);
+      border-radius: 5px;
+      padding: 1.1rem 1.3rem;
+      overflow-x: auto;
+      margin: 1.2rem 0;
+    }
+
+    .reader-body pre code { background: none; padding: 0; }
+
+    .reader-body hr {
+      border: none;
+      border-top: 1px solid var(--divider);
+      margin: 2.5rem 0;
+    }
+
+    .reader-body ul, .reader-body ol {
+      padding-left: 1.6rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .reader-body li { margin-bottom: 0.4rem; }
+
+    .reader-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--divider);
+      gap: 1rem;
+    }
+
+    .nav-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--surface);
+      border: 1px solid var(--divider);
+      border-radius: 4px;
+      color: var(--text-muted);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      letter-spacing: 0.05em;
+      padding: 0.6rem 1.1rem;
+      cursor: pointer;
+      transition: color 0.15s, border-color 0.15s, background 0.15s;
+    }
+
+    .nav-btn:hover {
+      color: var(--accent);
+      border-color: var(--border);
+      background: var(--surface2);
+    }
+
+    .nav-btn:disabled {
+      opacity: 0.25;
+      cursor: not-allowed;
+    }
+
+    .nav-btn:disabled:hover {
+      color: var(--text-muted);
+      border-color: var(--divider);
+      background: var(--surface);
+    }
+
+    .nav-chapter-label {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      text-align: center;
+      font-style: italic;
+    }
+
+    #scroll-top {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      background: var(--surface2);
+      color: var(--text-muted);
+      border: 1px solid var(--divider);
+      border-radius: 4px;
+      width: 38px;
+      height: 38px;
+      font-size: 1rem;
+      cursor: pointer;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      transition: color 0.15s, border-color 0.15s;
+      z-index: 99;
+    }
+
+    #scroll-top.visible { display: flex; }
+    #scroll-top:hover { color: var(--accent); border-color: var(--border); }
+  </style>
+</head>
+<body>
+
+<div id="index-view">
+  <header>
+    <h1 class="novel-title" id="novel-title-el">The 9th Sin</h1>
+    <div class="header-rule">
+      <span></span>
+      <span class="header-ornament">✦</span>
+      <span></span>
+    </div>
+    <p class="subtitle">Chapter Index</p>
+  </header>
+
+  <div class="controls">
+    <div class="search-wrap">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+      </svg>
+      <input type="text" id="search" placeholder="Search chapters…" autocomplete="off" />
+    </div>
+    <button class="sort-btn" id="sort-btn" title="Toggle sort order">
+      <span class="sort-icon">↑</span>
+      <span id="sort-label">Newest First</span>
+    </button>
+  </div>
+
+  <p class="chapter-meta" id="chapter-meta"></p>
+
+  <div class="chapter-list" id="chapter-list">
+    <div class="state-msg">
+      <span class="loading-dots">Loading chapters</span>
+    </div>
+  </div>
+</div>
+
+<div id="reader">
+  <div class="reader-topbar">
+    <button class="back-btn" id="back-btn">← Index</button>
+    <span class="reader-title-bar" id="reader-title"></span>
+  </div>
+  <div class="reader-content">
+    <div class="reader-body" id="reader-body"></div>
+    <div class="reader-nav">
+      <button class="nav-btn" id="prev-btn">← Prev</button>
+      <span class="nav-chapter-label" id="nav-label"></span>
+      <button class="nav-btn" id="next-btn">Next →</button>
+    </div>
+  </div>
+</div>
+
+<button id="scroll-top" aria-label="Scroll to top">↑</button>
+
+<script src="https://cdn.jsdelivr.net/npm/marked@9/marked.min.js"></script>
+
+<script>
+  const GITHUB_USER = 'the9thsin';
+  const GITHUB_REPO = 'the9thsin.github.io';
+  const NOVEL_TITLE = 'The 9th Sin';
+
+  document.getElementById('novel-title-el').textContent = NOVEL_TITLE;
+  document.title = NOVEL_TITLE;
+
+  let allChapters = [];
+  let currentIndex = -1;
+  let sortAsc = false;
+
+  function extractNumber(filename) {
+    const m = filename.match(/(\d+)/);
+    return m ? parseInt(m[1], 10) : 0;
+  }
+
+  function formatName(filename) {
+    return filename
+      .replace(/\.md$/i, '')
+      .replace(/[-_]/g, ' ')
+      .replace(/([a-zA-Z])(\d)/g, '$1 $2')
+      .replace(/(\d)([a-zA-Z])/g, '$1 $2')
+      .replace(/\b\w/g, c => c.toUpperCase())
+      .replace(/\s+/g, ' ')
+      .trim();
+  }
+
+  function getSorted() {
+    return allChapters.slice().sort((a, b) => sortAsc ? a.number - b.number : b.number - a.number);
+  }
+
+  function getVisible() {
+    const q = document.getElementById('search').value.trim().toLowerCase();
+    let list = getSorted();
+    if (q) {
+      list = list.filter(c =>
+        c.number.toString().includes(q) ||
+        c.displayName.toLowerCase().includes(q)
+      );
+    }
+    return list;
+  }
+
+  async function fetchChapters() {
+    const url = `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/contents/chapters`;
+    try {
+      const res = await fetch(url, { headers: { Accept: 'application/vnd.github.v3+json' } });
+      if (!res.ok) {
+        const err = await res.json().catch(() => ({}));
+        throw new Error(err.message || `HTTP ${res.status}`);
+      }
+      const files = await res.json();
+      allChapters = files
+        .filter(f => f.type === 'file' && /\.md$/i.test(f.name))
+        .map(f => ({
+          filename:    f.name,
+          displayName: formatName(f.name),
+          number:      extractNumber(f.name),
+          rawUrl:      f.download_url,
+        }));
+      renderList();
+    } catch (e) {
+      document.getElementById('chapter-list').innerHTML =
+        `<div class="state-msg">Could not load chapters.<br><small style="opacity:.6">${e.message}</small></div>`;
+    }
+  }
+
+  function renderList() {
+    const visible = getVisible();
+    const meta = document.getElementById('chapter-meta');
+    const container = document.getElementById('chapter-list');
+
+    meta.textContent = allChapters.length
+      ? `${visible.length} of ${allChapters.length} chapter${allChapters.length !== 1 ? 's' : ''}`
+      : '';
+
+    if (visible.length === 0) {
+      container.innerHTML = allChapters.length
+        ? '<div class="state-msg">No chapters match your search.</div>'
+        : '<div class="state-msg">No .md files found in the chapters/ folder.</div>';
+      return;
+    }
+
+    container.innerHTML = visible.map((c, i) => `
+      <div
+        class="chapter-item"
+        role="button"
+        tabindex="0"
+        data-url="${c.rawUrl}"
+        data-name="${c.displayName.replace(/"/g, '&quot;')}"
+        data-num="${c.number}"
+        style="animation-delay:${Math.min(i * 0.03, 0.45)}s"
+      >
+        <span class="chapter-num">CH ${String(c.number).padStart(3, '0')}</span>
+        <span class="chapter-name">${c.displayName}</span>
+        <span class="chapter-arrow">→</span>
+      </div>
+    `).join('');
+
+    container.querySelectorAll('.chapter-item').forEach(el => {
+      const open = () => openChapterByNum(parseInt(el.dataset.num));
+      el.addEventListener('click', open);
+      el.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') open(); });
+    });
+  }
+
+  function getChronological() {
+    return allChapters.slice().sort((a, b) => a.number - b.number);
+  }
+
+  function openChapterByNum(num) {
+    const chrono = getChronological();
+    const idx = chrono.findIndex(c => c.number === num);
+    if (idx === -1) return;
+    currentIndex = idx;
+    openChapter(chrono[idx]);
+  }
+
+  async function openChapter(chapter) {
+    const chrono = getChronological();
+    currentIndex = chrono.findIndex(c => c.number === chapter.number);
+
+    document.getElementById('index-view').style.display = 'none';
+    document.getElementById('reader').style.display = 'block';
+    document.getElementById('reader-title').textContent = chapter.displayName;
+    document.getElementById('reader-body').innerHTML =
+      '<div class="state-msg"><span class="loading-dots">Loading</span></div>';
+
+    updateNavButtons();
+    window.scrollTo(0, 0);
+
+    try {
+      const res = await fetch(chapter.rawUrl);
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const md = await res.text();
+      document.getElementById('reader-body').innerHTML = marked.parse(md);
+    } catch (e) {
+      document.getElementById('reader-body').innerHTML =
+        `<div class="state-msg">Could not load chapter.<br><small style="opacity:.6">${e.message}</small></div>`;
+    }
+  }
+
+  function updateNavButtons() {
+    const chrono = getChronological();
+    const prevBtn = document.getElementById('prev-btn');
+    const nextBtn = document.getElementById('next-btn');
+    const label   = document.getElementById('nav-label');
+
+    prevBtn.disabled = currentIndex <= 0;
+    nextBtn.disabled = currentIndex >= chrono.length - 1;
+
+    const cur = chrono[currentIndex];
+    label.textContent = cur ? cur.displayName : '';
+  }
+
+  document.getElementById('prev-btn').addEventListener('click', () => {
+    const chrono = getChronological();
+    if (currentIndex > 0) openChapter(chrono[currentIndex - 1]);
+  });
+
+  document.getElementById('next-btn').addEventListener('click', () => {
+    const chrono = getChronological();
+    if (currentIndex < chrono.length - 1) openChapter(chrono[currentIndex + 1]);
+  });
+
+  document.getElementById('sort-btn').addEventListener('click', () => {
+    sortAsc = !sortAsc;
+    document.getElementById('sort-btn').classList.toggle('asc', sortAsc);
+    document.getElementById('sort-label').textContent = sortAsc ? 'Oldest First' : 'Newest First';
+    renderList();
+  });
+
+  document.getElementById('search').addEventListener('input', renderList);
+
+  document.getElementById('back-btn').addEventListener('click', () => {
+    document.getElementById('reader').style.display = 'none';
+    document.getElementById('index-view').style.display = 'block';
+    window.scrollTo(0, 0);
+  });
+
+  const scrollTopBtn = document.getElementById('scroll-top');
+  window.addEventListener('scroll', () => {
+    scrollTopBtn.classList.toggle('visible', window.scrollY > 350);
+  });
+  scrollTopBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+  fetchChapters();
+</script>
+</body>
+</html>
