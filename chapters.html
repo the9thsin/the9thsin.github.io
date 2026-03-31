@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter Viewer</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/markdown-it/dist/markdown-it.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Light Novel Chapter Viewer</h1>
+        <input type="text" id="search" placeholder="Search by chapter number" />
+        <button id="searchBtn">Search</button>
+    </header>
+    <nav>
+        <button id="prevBtn">&#8249; Previous</button>
+        <button id="nextBtn">Next &#8250;</button>
+    </nav>
+    <section id="chapterContent"></section>
+    <aside>
+        <h2>Chapter List</h2>
+        <ul id="chapterList">
+            <!-- Chapter list items will be dynamically created here -->
+        </ul>
+    </aside>
+    <script>
+        const chapters = [
+            {number: 1, content: `# Chapter 1\nThis is the content of chapter one.`},
+            {number: 2, content: `# Chapter 2\nThis is the content of chapter two.`},
+            // Add more chapters as needed
+        ];
+
+        let currentChapter = 0;
+
+        const renderChapter = (index) => {
+            const chapterContent = document.getElementById('chapterContent');
+            const md = window.markdownit();
+            chapterContent.innerHTML = md.render(chapters[index].content);
+        };
+
+        const populateChapterList = () => {
+            const chapterList = document.getElementById('chapterList');
+            chapters.forEach(chapter => {
+                const listItem = document.createElement('li');
+                listItem.textContent = `Chapter ${chapter.number}`;
+                listItem.addEventListener('click', () => {
+                    currentChapter = chapter.number - 1;
+                    renderChapter(currentChapter);
+                });
+                chapterList.appendChild(listItem);
+            });
+        };
+
+        document.getElementById('prevBtn').onclick = () => {
+            if (currentChapter > 0) {
+                currentChapter--;
+                renderChapter(currentChapter);
+            }
+        };
+
+        document.getElementById('nextBtn').onclick = () => {
+            if (currentChapter < chapters.length - 1) {
+                currentChapter++;
+                renderChapter(currentChapter);
+            }
+        };
+
+        document.getElementById('searchBtn').onclick = () => {
+            const chapterNumber = parseInt(document.getElementById('search').value);
+            if (chapterNumber && chapterNumber > 0 && chapterNumber <= chapters.length) {
+                currentChapter = chapterNumber - 1;
+                renderChapter(currentChapter);
+            }
+        };
+
+        populateChapterList();
+        renderChapter(currentChapter);
+    </script>
+</body>
+</html>
