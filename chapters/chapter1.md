@@ -1,97 +1,356 @@
-A pile of rubble, a boy sits on top of it; his skin tanned from the sun, his hair a dark cyan-green, his eyes a lighter cyan. A soft ray of light strays from the clouds and hits his face, his eyes glistening as he quietly watches the sky.
+### Chapter 1 - Distant Rumbles
+---
 
-Another boy sneaks up behind him, sharing a similar complexion to the boy, and says -
+A pile of rubble. A boy sits on top of it, his skin tanned from the sun, his hair a dark black reflecting a tint of cyan in the sun, his eyes a dark shade of red. A soft ray of light slips through the clouds and lays across his face, making his eyes glisten as he quietly watches the sky.
+
+
+Another boy sneaks up behind him, sharing a similar complexion although his eyes being a chestnut brown, and calls out -
+
 
 "KOKUN!! Come on! What are you doing up here all alone?"
 
-The boy upon the rubble looks down distastefully, lifting his arms up and sighing as he turns to face the surprise behind him.
+
+The boy on the rubble looks down distastefully, lifting his arms with a sigh as he turns to face him.
+
 
 "I'm sure if I was doing anything but looking up, you'd notice, right, Hayato?"
 
-Hayato looks down his expression clouding, clearly upset at the rudeness in the way Kokun spoke.
 
-Kokun, starting to feel the guilt, begins to bites his lip. He turns his head the other way to avoid looking at his mistake.
+Hayato’s expression clouds as he looks down, upset by his tone.
+
+
+Kokun, starting to feel guilty, bites his lip and turns his head away, avoiding eye contact.
+
 
 "I didn't mean to be rude, don't act like that... You know exactly what you're doing!"
 
-Hayato smiles while Kokun is still frowning, fidgeting with his fingers.
 
-"Well, I got you, didn't I? Shows that you should definitely be a lot kinder to your brother."
+The younger boy smiles while the other still frowns, fidgeting with his fingers.
 
-Kokun, now growing a deeper shade of red, turns back toward him.
+
+"Well, I got you, didn't I? Just shows you should be kind to your brother."
+
+
+Kokun’s face deepens in color as he turns back.
+
 
 "YOU'RE NOT FUNNY, HAYATO!"
 
-Hayato, still cheerfully smiling, doesn't respond. Kokun gathers the toys at his feet and puts them back into his pockets.
+
+Still smiling, Hayato doesn’t respond. Kokun gathers the toys at his feet and stuffs them into his pockets.
+
 
 "Let's go now, dummy."
 
-Kokun waits for his younger brother to turn around...
 
-Suddenly, Kokun reaches out and delivers a swift swat to the back of Hayato’s head a loud smack rings out, echoing through the destroyed city around them.
+He waits for his younger brother to turn around...
+
+
+Then suddenly, he reaches out and delivers a swift swat to the back of his head - a loud smack echoes through the ruined city.
+
 
 "KO, THAT HURTS, YOU KNOW?!"
 
-Kokun does nothing but giggle, shaking his stinging hand while watching the large red bump appear on his younger brother's head.
 
-"Also, what's with you calling me Ko? My name's not even that long to be shortened."
+Kokun just giggles, shaking his stinging hand as he watches a red bump form.
 
-Hayato, trying to recover from the devastating blow to his head, looks back at him, still attempting to stifle his tears.
+
+"What's with you calling me Ko? My name’s not even that long."
+
+
+Hayato, still recovering, looks back while trying to hold in tears.
+
 
 "I just thought it sounded nice. Is there something wrong with that... bully?"
 
-Kokun, now feeling even worse about himself, starts sulking as he continues to walk down the mountain of remnants from a collapsed skyscraper.
 
-While walking back toward the inner city, Hayato stops at a bench and digs around in his small red waist bag, pulling out about a quarter loaf of white bread.
+Now feeling worse, Kokun starts to sulk as he walks down the slope of broken concrete and steel.
 
-"Ko, come share this with me - I snagged it off some idiot who left himself wide open!"
 
-Kokun, smiling, instantly agrees to his offer, briefly wondering how his little brother had become such a deviant, though he quickly shakes that thought out of his head.
+On their way back toward the inner city, Hayato stops at a bench and rummages through his small red waist bag, pulling out about a quarter loaf of white bread.
 
-He knows deep down that he and his brother should do anything to survive - after all, wanting to die is what caused the apocalypse.
 
-While they snack on the bread, a bird lands in front of them, its white feathers reflecting a harsh glow around them.
+"Ko, come share this with me - I snagged it off some idiot who left himself open!"
 
-Hayato opens his mouth, but Ko hastily puts a finger to his lips. Hayato understands and points at his bread, then at the bird. He tries to tear a piece off for it, but Ko stops him, tearing a piece from his own bread and handing it over so he can feed the animal.
 
-Seeing animals so close to humans is a rare sight - a little bread for his brother's happiness shouldn't hurt.
+Smiling, Kokun agrees, briefly wondering how his little brother ended up like this, before pushing the thought aside.
 
-After the encounter, they both stand up with their stomachs full of bread, but a certain low rumbling in the distance suddenly catches their attention.
 
-Hayato begins to shake a bit as his calm walk turns into a slight, nervous jog. Ko quickly follows suit, speeding up the pace in order to keep up with his brother.
+He knows they’ll do anything to survive - they have to.
 
-Ko is now also starting to fear the distant, heavy noise. His eyes begin to dart around his surroundings, making sure there is nothing out of the ordinary lurking in the rubble.
 
-"Why are you speeding up so much? It doesn't even sound that close, so don't worry too much, okay..?"
+While they eat, a bird lands in front of them, its white feathers catching the light.
 
-Hayato doesn't allow Ko's words to calm him; he’s still visibly scared.
 
-"Ko, what if it's the eights?"
+Hayato opens his mouth, but Kokun quickly raises a finger to his lips. He understands, pointing at the bread, then at the bird. As he tries to tear off a piece, Kokun stops him and instead breaks off some of his own, handing it over.
 
-At the mention of them, Ko's breath shortens and an obvious, heavy gulp of saliva travels down his throat.
 
-"Let's not think like that, okay? We're so close to home anyway."
+Seeing animals this close to people is rare - giving up a little bread for his brother’s happiness doesn’t matter.
+
+
+Afterward, they stand, brushing themselves off, when a low rumble in the distance catches their attention.
+
+
+Hayato begins to shake slightly, his calm walk turning into a nervous jog. Kokun follows, quickening his pace to keep up.
+
+
+Now he feels it too. The sound is heavy. Wrong. His eyes dart around the rubble, searching for anything out of place.
+
+
+"Why are you speeding up so much? It doesn’t even sound that close, so don’t worry, okay..?"
+
+
+The words don’t help. Hayato is still visibly shaken.
+
+
+"Ko... what if it's the eights?"
+
+
+At that, Kokun’s breath shortens, a heavy gulp forcing its way down his throat.
+
+
+"Let’s not think like that, okay? We’re close to home anyway."
+
 
 "I'll try..."
 
-Ko notices a jagged piece of debris hurtling through the partly cloudy, bright blue sky, slamming into a tall building beside them. The impact sends a cloud of dust raining down, coating the two brothers in thin specks of brown and gray.
 
-Tears forming in the younger boy's eyes start to become obvious, and a chilling realization hits the older brother: an Eight is somewhere behind them, closing in.
+A jagged piece of debris suddenly cuts through the partly cloudy sky and slams into a nearby building. The impact sends dust raining down, coating them in gray and brown.
 
-"Hayato, come on, let’s go hide in a building! We can let the people in the city deal with it and come out after."
 
-Ko's legs begin to shake and bounce with adrenaline as he takes hold of his brother’s arm, quickly pulling him into a side alley to search for any entrance to a hiding spot. Now in a full sob, the younger boy whines, his skin turning pale and eyes wide with terror as his voice turns shaky.
+Tears begin to well in the younger boy’s eyes, and realization settles in.
+
+
+Something is behind them.
+
+
+"Hayato, come on - let’s hide in a building! We’ll wait it out and come back after."
+
+
+His legs tremble with adrenaline as he grabs his brother’s arm, pulling him into a side alley while searching for somewhere to hide. The younger boy breaks into sobs, his face pale, eyes wide with fear, his voice shaking.
+
 
 "Ko... we won't die, will we?"
 
-The older boy’s throat squeezes, desperately trying to think of any way to calm his sibling. However, he can’t find the words, nor is he able to speak. A single tear runs down his own face; he simply turns and gives a slight, reassuring nod.
 
-Not too deep in the alley, he finds an opening into a structure, quickly shoving his brother inside to find a safe place to crouch. Ko places him against a pillar, making sure he doesn't face the window.
+Kokun’s throat tightens. He tries to find the words, but nothing comes. A tear slips down his face as he gives a small, reassuring nod.
 
-"No matter what, don't talk - and don't look over at me."
 
-He raises his index finger to his lips, and his brother nods, drops of tears falling onto his dark blue jeans.
+Not far in, he finds an opening and quickly pushes his brother inside, guiding him to a spot behind a pillar, making sure he can’t see the window.
 
-The older boy creeps toward the cracked windows, his head peeking over the ledge, his odd hair color reflecting the dim light around him. A loud, rhythmic pounding down the street creeps closer, filling his heart with anxiety. One of the monsters that caused almost all of humanity to be wiped out is now within shouting distance. His legs begin to bounce even more violently as his arms grow weak.
 
-Then, he spots it. He instantly covers his mouth to stifle the long, built-up scream.
+"No matter what, don’t talk - and don’t look over at me."
+
+
+He raises a finger to his lips. Hayato nods, tears falling onto his jeans.
+
+
+Kokun slowly creeps toward the cracked window, carefully peeking over the ledge. His hair catches the dim light as a loud, rhythmic pounding echoes down the street, growing closer.
+
+
+His heart pounds with it.
+
+
+The thing that destroyed most of humanity is now close.
+
+
+Too close.
+
+
+His legs shake harder, his arms weakening.
+
+
+Then he sees it.
+
+
+He clamps a hand over his mouth, barely holding back the scream building in his chest.
+
+
+Ko lets out a low, shaky whimper.
+
+
+An Eight - the monster is a pitch-black nightmare with centipede-like arms, jagged crab claws, and a maw overflowing with teeth. Its lower body built like a horse - pummels the asphalt, kicking up massive clouds of debris.
+
+
+'That one's enormous...'
+
+
+As it passes, a piercing, high-pitched scream tears out from rows of serrated teeth.
+
+
+As the boy turns to hurry back to his brother, another sound catches his attention - the sharp shatter of glass, followed by a loud, defiant hissing. Peering out the window, he spots the silhouette of a man shouting at the beast.
+
+
+'He’s crazy. How could he actually try to provoke that thing?'
+
+
+He tries to divert his gaze, knowing exactly what’s about to happen, but for some reason, he can’t look away.
+
+
+One of the many limbs streaks toward the man standing in the middle of the street. It pierces him instantly, straight through his center of mass. The man goes silent, the bottles he was holding slipping from his grip.
+
+
+His body collapses as the arm retreats, leaving a hole the size of a cannonball in its wake. The monster begins to shake off the fresh blood, the dark red contrasting against its even darker, void-like skin.
+
+
+‘It had to have been some sort of drugs - there’s no way he actually thought he could take that thing on.’
+
+
+A small clank rings out below him, and a deeper dread fills the boy's chest as he looks toward his feet. One of his toys has fallen. Taking another cautious glance out the window, he sees the monster now facing the building where he and his brother are hiding. It stands so still, it almost looks dead.
+
+
+It has to be listening for another sound.
+
+
+He quickly ducks under the windowsill, dragging his back along the wall as he slides into a crouched position. His body, reacting to the terror, stops shaking in an effort to stay completely silent.
+
+
+Hayato’s eyes are forcefully shut, but his quiet sobbing doesn’t feel quiet anymore - it’s almost like Ko can hear every single sound in the world.
+
+
+‘I can’t even tell him to stop, or signal him in any way.’
+
+
+‘Please stop crying, Hayato.’
+
+
+Turning pale, the older brother realizes there is no escape. His only option is to pray they do not end up like that man - to pray it doesn’t hear them.
+
+
+The loud rumbling begins once again, slowly fading into the distance. Finally, both boys open their mouths and let out a heavy sigh, their breathing growing ragged.
+
+
+"Ko, I'm sorry I couldn't keep quiet. I was so scared."
+
+
+He starts to cry along with his brother. As he moves to embrace the younger boy, he trips over the toy that nearly cost them their lives. A raw scrape appears on his knee, but it doesn’t matter now - he gets right back up to reach him.
+
+
+The older brother picks him up, remaining crouched, and brings him into the faint light of the window. He cups the small face, using his thumb to brush away the tears trailing down his brother's cheek.
+
+
+Hayato, letting out a soft sniffle, finally mutters,
+
+
+"Can we go home now? It's gone, right?"
+
+
+A weary smile begins to crease Ko's face.
+
+
+"Yes, we can. I’m so glad you’re okay. Let’s go now."
+
+
+The boys exit the building that sheltered them and step out into the alleyway. They walk down the desolate street, following the path of the Eight toward the city's heart. They cling to each other tightly, terrified of losing one another.
+
+
+The man’s blood stains their shoes - and their memories.
+
+
+As they continue, lacking both the energy and the courage to speak, they reach the outer wall. The corpse of the Eight lies just outside the barrier a couple of people stand out, carrying more of short range weapons like swords. Elsewise its also swarmed by military personnel as its oily black fluids seep across the asphalt.
+
+
+They are quickly surrounded by soldiers. Questions are fired at them, but no answers are given; neither boy can find his voice after what had happened.
+
+
+An officer stares down at them - long, unkempt hair flowing from beneath his beret, his brow furrowed in a scornful glare.
+
+
+"What are you doing beyond the wall?"
+
+
+Silence.
+
+
+He scoffs.
+
+
+"Do you boys live here?"
+
+
+They nod.
+
+
+"What are your names?"
+
+
+The pair answers, their voices thin, shaky, and heavy with emotion.
+
+
+"Kokun."
+
+
+"Hayato."
+
+
+The officer lets out a heavy sigh.
+
+
+"Family name?"
+
+
+The brothers answer in a unified whisper.
+
+
+"Kugai."
+
+
+As the sun sets, they are escorted into town - met by odd looks from the crowd surrounding the gate, everyone eager for a glimpse of whatever happened beyond those tall, gray walls.
+
+
+'What's their issue? Why is everyone looking at us like that... so judgmental?'
+
+
+Color finally returns to their skin, and a faint flicker of childlike liveliness follows. The two boys look at each other and smile, knowing they are finally safe again.
+
+
+'That's my first time being so close to an eight.'
+
+
+In the back of the transport car, the noise of the outside world dulls into a low hum. Kokun leans his head against the cold window, his thoughts finally catching up to him.
+
+
+An Eight.
+
+
+The military always said the same thing about them. They don’t come from anywhere. They don’t belong to anything. One day, someone or people just... disappear, and later, something like that shows up.
+
+He swallows, his throat still dry.
+
+
+They aren’t just monsters. Everyone knows what they really are, even if no one wants to say it out loud.
+
+People who gave up.
+
+
+His fingers curl slightly against his sleeve.
+
+
+They’re so unpredictable. Some are small. Some are massive. Some move like animals, others like something worse. It all depends on what was left behind.
+
+
+Or maybe... what wasn’t.
+
+
+Kokun exhales slowly, his chest tightening.
+
+
+If you think like that for too long... if you really want it...
+
+
+'Damnit.'
+
+
+His eyes shift slightly toward Hayato, sitting beside him.
+
+
+Don't think like that.
+
+
+Don't ever think like that.
+
+
+Don't wish to die.
+
+
+He closes his eyes, pressing his head more firmly against the glass, trying to push the thought away - but it lingers, heavy and unmoving.
